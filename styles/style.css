@@ -277,7 +277,6 @@
   .content__section_tips,
   .content__section_reasons {
     grid-template-columns: 1fr 2fr;
-
   }
 
   .content__section_intro > .content__item {
