@@ -21,7 +21,7 @@
 
 ## Ссылка на проект
 
-https://username.github.io/slozhno-sosredotochitsya/
+https://github.com/haaayla/slozhno-sosredotochitsya-fd
 
 ## Как запустить проект
 
