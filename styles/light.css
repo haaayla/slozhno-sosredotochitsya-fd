@@ -4,12 +4,6 @@
   переключая тему
 */
 
-@media (prefers-color-scheme: light) {
-  .header__rec {
-    display: none;
-  }
-}
-
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -29,4 +23,38 @@
   --link-color: #353430;
   --hover-color: #32312d66;
   --focus-visible-color: #353430;
+}
+
+:root.theme-light .header__rec {
+  display: none;
+}
+
+:root.theme-light .header__theme-menu-button {
+  color: var(--text-color, #353430);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url('../images/cover-image-light.png');
+    --bg-color: #fff1f7;
+    --accent-color: #ff8dcb;
+    --decorated-zone-color: #353430;
+    --border-color: #353430;
+    --title-color: #ffc2e6;
+    --section-title-color: #353430;
+    --content-title-color: #353430;
+    --text-color: #353430;
+    --underline-color: #353430;
+    --link-color: #353430;
+    --hover-color: #32312d66;
+    --focus-visible-color: #353430;
+  }
+
+  .header__rec {
+    display: none;
+  }
+
+  .header__theme-menu-button {
+    color: var(--text-color, #353430);
+  }
 }

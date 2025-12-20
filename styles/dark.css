@@ -16,11 +16,24 @@
   --border-color: #ff0070;
   --title-color: #db00ff;
   --section-title-color: #ff0070;
-  --section-subtitle-color: #000028;
-  --item-title-color: #000028;
+  --content-title-color: #000028;
   --text-color: #f1b2ce;
   --underline-color: #f1b2ce;
   --link-color: #f1b2ce;
   --hover-color: #ff007066;
-  --focus-visible-color: #ff0070;
+  --focus-visible-color: #f1b2ce;
+}
+
+:root.theme-dark .header__rec {
+  display: inline-flex;
+}
+
+:root.theme-dark .header__theme-menu-button {
+  color: var(--accent-color, #ff0070);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url('../images/cover-image-dark.png');
+  }
 }
