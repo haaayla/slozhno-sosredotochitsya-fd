@@ -50,7 +50,7 @@
 
 .header__rec {
   position: absolute;
-  display: inline-flex;
+  display: var(--rec-display, inline-flex);
   align-items: center;
   inset-block-start: 10px;
   inset-inline-end: 19px;
@@ -81,7 +81,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color, #ff0070);
+  color: var(--menu-button-color, #ff0070);
   font-size: 18px;
   text-align: center;
   text-transform: lowercase;
